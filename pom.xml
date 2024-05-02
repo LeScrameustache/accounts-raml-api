@@ -4,9 +4,10 @@
 	xsi:schemaLocation="http://maven.apache.org/POM/4.0.0 https://maven.apache.org/xsd/maven-4.0.0.xsd">
 	<modelVersion>4.0.0</modelVersion>
 
-	<groupId>com.mycompany</groupId>
+	<groupId>0f194f7b-635c-4d32-8312-3c80d4aa3e5a</groupId>
 	<artifactId>accounts-raml-api</artifactId>
 	<version>1.0.0</version>
+
 	<packaging>mule-application</packaging>
 
 	<name>accounts-raml-api</name>
@@ -31,6 +32,10 @@
 				<artifactId>mule-maven-plugin</artifactId>
 				<version>${mule.maven.plugin.version}</version>
 				<extensions>true</extensions>
+				<configuration>
+                    <classifier>mule-application</classifier>
+                </configuration>
+
 				<configuration>
 					<cloudhub2Deployment>
 						<uri>https://anypoint.mulesoft.com</uri>
@@ -99,5 +104,16 @@
 			</snapshots>
 		</pluginRepository>
 	</pluginRepositories>
+
+	...
+	<distributionManagement>
+	  <repository>
+		<id>Repository</id>
+		<name>Corporate Repository</name>
+		<url>https://maven.anypoint.mulesoft.com/api/v3/organizations/0f194f7b-635c-4d32-8312-3c80d4aa3e5a/maven</url>
+		<layout>default</layout>
+	  </repository>
+	</distributionManagement>
+	...
 
 </project>
