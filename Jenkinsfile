@@ -14,7 +14,7 @@ pipeline {
                 ANYPOINT_CREDENTIALS = credentials('5582a536-8144-4165-a4fa-3e47aeadf224')
             }
             steps {
-                sh 'mvn clean deploy -DmuleDeploy -Dcloud.env=Sandbox -DcloudhubAppName=accounts-raml-api -Dmule.version=4.6.1 -Dcloud.user=$ANYPOINT_CREDENTIALS_USR -Dcloud.password=$ANYPOINT_CREDENTIALS_PSW'
+                sh 'mvn deploy -DmuleDeploy -Dcloud.env=Sandbox -DcloudhubAppName=accounts-raml-api -Dmule.version=4.6.1 -Dcloud.user=$ANYPOINT_CREDENTIALS_USR -Dcloud.password=$ANYPOINT_CREDENTIALS_PSW'
             }
         }
     }
