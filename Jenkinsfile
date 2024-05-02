@@ -11,7 +11,7 @@ pipeline {
         }
         stage('Deploy Exchange') {
             environment {
-                ANYPOINT_CREDENTIALS = credentials('tonyhawkanypointtrainingcredentials')
+                ANYPOINT_CREDENTIALS = credentials('5582a536-8144-4165-a4fa-3e47aeadf224')
             }
             steps {
                 sh "mvn deploy"
