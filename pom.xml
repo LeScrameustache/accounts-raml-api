@@ -6,7 +6,7 @@
 
 	<groupId>0f194f7b-635c-4d32-8312-3c80d4aa3e5a</groupId>
 	<artifactId>accounts-raml-api</artifactId>
-	<version>1.0.0-SNAPSHOT</version>
+	<version>1.0.0</version>
 	<packaging>mule-application</packaging>
 
 	<name>accounts-raml-api</name>
