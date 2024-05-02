@@ -102,7 +102,6 @@
 		</pluginRepository>
 	</pluginRepositories>
 
-	...
 	<distributionManagement>
 	  <repository>
 		<id>Repository</id>
@@ -111,6 +110,5 @@
 		<layout>default</layout>
 	  </repository>
 	</distributionManagement>
-	...
 
 </project>
